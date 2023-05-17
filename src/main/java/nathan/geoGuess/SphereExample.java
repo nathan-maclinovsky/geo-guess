@@ -139,7 +139,7 @@ public class SphereExample extends Application {
    
   
  
-    
+   
     primaryStage.addEventHandler(KeyEvent.KEY_PRESSED, event -> {
       switch (event.getCode()) {
         case W:
@@ -162,7 +162,7 @@ public class SphereExample extends Application {
           group.rotateByY(5.0);
           break;
         case A:
-          group.rotateByX(-5.0);
+          group.rotateByX(5.0);
           break;
         case D:
           group.rotateByX(-5.0);
@@ -211,6 +211,8 @@ public class SphereExample extends Application {
           break;
         
       }
+   
+
     });
  
     primaryStage.setTitle("Globe Trotter");
